@@ -1,13 +1,13 @@
 
 import React from 'react';
-import Header from './Header';
-import Hero from './Hero';
-import HowItWorks from './HowItWorks';
-import TargetAudience from './TargetAudience';
-import SupportSystem from './SupportSystem';
-import Community from './Community';
-import SocialProof from './SocialProof';
-import Footer from './Footer';
+import Header from './Header.tsx';
+import Hero from './Hero.tsx';
+import HowItWorks from './HowItWorks.tsx';
+import TargetAudience from './TargetAudience.tsx';
+import SupportSystem from './SupportSystem.tsx';
+import Community from './Community.tsx';
+import SocialProof from './SocialProof.tsx';
+import Footer from './Footer.tsx';
 
 interface LandingPageProps {
   onAccessSystem: () => void;

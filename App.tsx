@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import IntroScreen from './components/IntroScreen';
-import LandingPage from './components/LandingPage';
-import Dashboard from './components/Dashboard';
+import IntroScreen from './components/IntroScreen.tsx';
+import LandingPage from './components/LandingPage.tsx';
+import Dashboard from './components/Dashboard.tsx';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -11,7 +11,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 3500); // Tempo levemente maior para garantir a fluidez da intro
     return () => clearTimeout(timer);
   }, []);
 
